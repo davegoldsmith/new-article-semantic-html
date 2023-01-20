@@ -6,37 +6,39 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accessibility Features: Easy Wins</title>
+  <!-- <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.11.0/build/cssnormalize/cssnormalize-min.css"> -->
+  <link rel="stylesheet" href="./news-article.css">
 </head>
 
 <body>
   <!-- navigation and header content -->
 
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Opinion</a></li>
-        <li><a href="#">Tech</a></li>
-        <li><a href="#">Sport</a></li>
-        <li><a href="#">Culture</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Lifestyle</a></li>
-        <li><a href="#">Jobs</a></li>
+  <header class="main-header">
+    <nav class="main-header__nav">
+      <ul class="main-header__item-list">
+        <li class="main-header__item"><a class="active" href="#">News</a></li>
+        <li class="main-header__item"><a href="#">Opinion</a></li>
+        <li class="main-header__item"><a href="#">Tech</a></li>
+        <li class="main-header__item"><a href="#">Sport</a></li>
+        <li class="main-header__item"><a href="#">Culture</a></li>
+        <li class="main-header__item"><a href="#">About</a></li>
+        <li class="main-header__item"><a href="#">Lifestyle</a></li>
+        <li class="main-header__item"><a href="#">Jobs</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <article>
-      <header>
-        <a href="">Tech Returners News</a>
-        <h1>Accessibility Features: Easy Wins</h1>
-        <h2>Handy tips on how to create accessible websites for everyone</h2>
-        <figure>
-          <img src="../images/accessibility-keyboard.jpg" alt="A keyboard with an Accessibility button">
-          <figcaption>The image shows a keyboard with an Accessibility button.</figcaption>
-        </figure>
-      </header>
 
+
+  <main class="wrapper">
+    <header class="header">
+      <h1>Accessibility Features: Easy Wins</h1>
+    </header>
+    <article class="main">
+      <h2>Handy tips on how to create accessible websites for everyone</h2>
+      <figure>
+        <img src="../images/accessibility-keyboard.jpg" alt="A keyboard with an Accessibility button">
+        <figcaption>The image shows a keyboard with an Accessibility button.</figcaption>
+      </figure>
       <section>
         <h3>Introduction</h3>
         <p>
@@ -83,7 +85,7 @@
           <li>
             Colour contrast: has been checked for text and background colour combinations to ensure that the contrast is
             sufficient and I have also
-            ensured that information is not referenced by colour alone.            
+            ensured that information is not referenced by colour alone.
           </li>
           <li>
             Style sheets: If style sheets are not supported or are turned off, information on the site can still be
@@ -96,12 +98,15 @@
             buttons of checkboxes.
           </li>
         </ul>
-        <p>For more information on Web Accessibility view: <a href="https://www.w3.org/WAI/test-evaluate/preliminary/">https://www.w3.org/WAI/test-evaluate/preliminary/</a></p>
+        <p>For more information on Web Accessibility view: <a
+            href="https://www.w3.org/WAI/test-evaluate/preliminary/">https://www.w3.org/WAI/test-evaluate/preliminary/</a>
+        </p>
       </section>
       <section>
         <h3>Conclusion</h3>
         <p>
-          By spending just a little more time on getting the building blocks of the web right, developers can help create an Internet that works for everyone.
+          By spending just a little more time on getting the building blocks of the web right, developers can help
+          create an Internet that works for everyone.
         </p>
       </section>
       <section>
@@ -113,22 +118,23 @@
           <li><a href="#">The six worst school sports memories of your childhood</a></li>
           <li><a href="#">Clairvoyants evening cancelled from unforeseen circumstances</a></li>
           <li><a href="#">Safety meeting ends in accident</a></li>
-          <li><a href="#">Russian traffic officer with golden toilet is arrested after police uncover massive bribery scheme</a></li>
-          <li><a href="#">Jellyfish apocalypse is coming claim scientists</a></li>            
+          <li><a href="#">Russian traffic officer with golden toilet is arrested after police uncover massive bribery
+              scheme</a></li>
+          <li><a href="#">Jellyfish apocalypse is coming claim scientists</a></li>
         </ul>
       </section>
-      <aside>
+      <!-- <aside class="stick-aside">
         <p>What would a truly accessible city look like? <a href="#">Read more..</a></p>
-      </aside>
+      </aside> -->
       <footer>
-        <address>
-          Author: <a href="mailto:jimmy.eggs@hotmail.com">Jim Eggs</a> on 04/08/2021
+        <address class="author-text">
+          Author: <a href="mailto:jimmy.eggs@hotmail.com">Jim Eggs</a> on Aug 4, 2021
         </address>
       </footer>
     </article>
 
-    <aside>
-      <h3>Preferences</h3>
+    <aside class="aside aside-1">
+      <h4>Preferences</h4>
       <p>
         We aim to make this site accessible to a wide audience and to ensure a great experience for all users by
         conforming to <a href="https://www.w3.org">World Wide Web
@@ -143,20 +149,25 @@
         <label>Allow flashing. elements Untick this to disable flashing and moving elements</label>
       </form>
     </aside>
-
-  </main>
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Opinion</a></li>
-        <li><a href="#">Sport</a></li>
-        <li><a href="#">Culture</a></li>
-        <li><a href="#">Tech</a></li>
-      </ul>
+    <aside class="aside aside-2">
+      <h4>Related Articles:</h4>
+      <p>What would a truly accessible city look like? <a href="#">Read more..</a></p>
+      <p>Space Monkeys <a href="#">Read more..</a></p>
+    </aside>
+    <footer class="footer">
+      <!-- <nav class="main-header__nav">
+        <ul class="main-header__item-list">
+          <li class="main-header__item"><a href="#">News</a></li>
+          <li class="main-header__item"><a href="#">Opinion</a></li>
+          <li class="main-header__item"><a href="#">Sport</a></li>
+          <li class="main-header__item"><a href="#">Culture</a></li>
+          <li class="main-header__item"><a href="#">Tech</a></li>
+        </ul>        
+      </nav> -->
       <small>&copy; 2021 Tech Returners News</small>
-    </nav>
-  </footer>
+    </footer>
+  </main>
+
 </body>
 
 </html>
